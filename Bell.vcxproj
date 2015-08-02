@@ -152,6 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\bell\assertion\Test_Assert.cpp" />
+    <ClCompile Include="src\bell\format\Test_Format.cpp" />
     <ClCompile Include="src\bell\hash\Crc32.cpp" />
     <ClCompile Include="src\bell\hash\Test_Crc32.cpp" />
     <ClCompile Include="src\bell\util\Test_ArrayRef.cpp" />
@@ -164,9 +165,14 @@
     <ClInclude Include="src\bell\Alias.hpp" />
     <ClInclude Include="src\bell\Assert.hpp" />
     <ClInclude Include="src\bell\assertion\Assert.hpp" />
+    <ClInclude Include="src\bell\Format.hpp" />
+    <ClInclude Include="src\bell\format\Format.hpp" />
     <ClInclude Include="src\bell\hash\Crc32.hpp" />
     <ClInclude Include="src\bell\preprocessor\Stringize.hpp" />
     <ClInclude Include="src\bell\util\ArrayRef.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\bell\format\Format.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

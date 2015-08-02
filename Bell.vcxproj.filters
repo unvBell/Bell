@@ -24,6 +24,9 @@
     <Filter Include="ソース ファイル\bell\hash">
       <UniqueIdentifier>{8ef67d6e-f1ba-4b95-b050-b60ca13696c5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\bell\format">
+      <UniqueIdentifier>{ef2cec2d-48e5-48f9-823b-87e93d85a094}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Main.cpp">
@@ -40,6 +43,9 @@
     </ClCompile>
     <ClCompile Include="src\bell\hash\Test_Crc32.cpp">
       <Filter>ソース ファイル\bell\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bell\format\Test_Format.cpp">
+      <Filter>ソース ファイル\bell\format</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -61,5 +67,16 @@
     <ClInclude Include="src\bell\Alias.hpp">
       <Filter>ソース ファイル\bell</Filter>
     </ClInclude>
+    <ClInclude Include="src\bell\format\Format.hpp">
+      <Filter>ソース ファイル\bell\format</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bell\Format.hpp">
+      <Filter>ソース ファイル\bell</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\bell\format\Format.inl">
+      <Filter>ソース ファイル\bell\format</Filter>
+    </None>
   </ItemGroup>
 </Project>
