@@ -59,6 +59,9 @@
     <ClCompile Include="src\bell\timer\Test_Timer.cpp">
       <Filter>ソース ファイル\bell\timer</Filter>
     </ClCompile>
+    <ClCompile Include="src\bell\exception\Test_TraceRecorder.cpp">
+      <Filter>ソース ファイル\bell\exception</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\bell\util\ArrayRef.hpp">
@@ -91,6 +94,12 @@
     <ClInclude Include="src\bell\timer\HiPerformanceTimer.hpp">
       <Filter>ソース ファイル\bell\timer</Filter>
     </ClInclude>
+    <ClInclude Include="src\bell\exception\TraceRecorder.hpp">
+      <Filter>ソース ファイル\bell\exception</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bell\exception\Exception.hpp">
+      <Filter>ソース ファイル\bell\exception</Filter>
+    </ClInclude>
     <ClInclude Include="src\bell\Timer.hpp">
       <Filter>ソース ファイル\bell</Filter>
     </ClInclude>
@@ -104,6 +113,9 @@
     </None>
     <None Include="src\bell\timer\Timer.inl">
       <Filter>ソース ファイル\bell\timer</Filter>
+    </None>
+    <None Include="src\bell\exception\Exception.inl">
+      <Filter>ソース ファイル\bell\exception</Filter>
     </None>
   </ItemGroup>
 </Project>
