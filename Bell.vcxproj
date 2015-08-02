@@ -152,7 +152,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\bell\assertion\Test_Assert.cpp" />
-    <ClCompile Include="src\bell\exception\Test_TraceRecorder.cpp" />
+    <ClCompile Include="src\bell\exception\Test_ErrorInfoRecorder.cpp" />
+    <ClCompile Include="src\bell\exception\Test_Exception.cpp" />
     <ClCompile Include="src\bell\format\Test_Format.cpp" />
     <ClCompile Include="src\bell\hash\Crc32.cpp" />
     <ClCompile Include="src\bell\hash\Test_Crc32.cpp" />
@@ -170,7 +171,7 @@
     <ClInclude Include="src\bell\assertion\Assert.hpp" />
     <ClInclude Include="src\bell\Exception.hpp" />
     <ClInclude Include="src\bell\exception\Exception.hpp" />
-    <ClInclude Include="src\bell\exception\TraceRecorder.hpp" />
+    <ClInclude Include="src\bell\exception\ErrorInfoRecorder.hpp" />
     <ClInclude Include="src\bell\Format.hpp" />
     <ClInclude Include="src\bell\format\Format.hpp" />
     <ClInclude Include="src\bell\hash\Crc32.hpp" />
@@ -181,7 +182,6 @@
     <ClInclude Include="src\bell\util\ArrayRef.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\bell\exception\Exception.inl" />
     <None Include="src\bell\format\Format.inl" />
     <None Include="src\bell\timer\Timer.inl" />
   </ItemGroup>

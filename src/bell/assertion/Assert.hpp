@@ -2,9 +2,9 @@
 
 #ifndef BELL_ENABLE_ASSERTION_HANDLER
 # include <iostream>
-# include "../preprocessor/Stringize.hpp"
 #endif
 
+#include "../preprocessor/Stringize.hpp"
 
 /**
  * アサーション文字列のフォーマッティング

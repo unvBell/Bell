@@ -59,7 +59,10 @@
     <ClCompile Include="src\bell\timer\Test_Timer.cpp">
       <Filter>ソース ファイル\bell\timer</Filter>
     </ClCompile>
-    <ClCompile Include="src\bell\exception\Test_TraceRecorder.cpp">
+    <ClCompile Include="src\bell\exception\Test_ErrorInfoRecorder.cpp">
+      <Filter>ソース ファイル\bell\exception</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bell\exception\Test_Exception.cpp">
       <Filter>ソース ファイル\bell\exception</Filter>
     </ClCompile>
   </ItemGroup>
@@ -94,9 +97,6 @@
     <ClInclude Include="src\bell\timer\HiPerformanceTimer.hpp">
       <Filter>ソース ファイル\bell\timer</Filter>
     </ClInclude>
-    <ClInclude Include="src\bell\exception\TraceRecorder.hpp">
-      <Filter>ソース ファイル\bell\exception</Filter>
-    </ClInclude>
     <ClInclude Include="src\bell\exception\Exception.hpp">
       <Filter>ソース ファイル\bell\exception</Filter>
     </ClInclude>
@@ -106,6 +106,9 @@
     <ClInclude Include="src\bell\Exception.hpp">
       <Filter>ソース ファイル\bell</Filter>
     </ClInclude>
+    <ClInclude Include="src\bell\exception\ErrorInfoRecorder.hpp">
+      <Filter>ソース ファイル\bell\exception</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="src\bell\format\Format.inl">
@@ -113,9 +116,6 @@
     </None>
     <None Include="src\bell\timer\Timer.inl">
       <Filter>ソース ファイル\bell\timer</Filter>
-    </None>
-    <None Include="src\bell\exception\Exception.inl">
-      <Filter>ソース ファイル\bell\exception</Filter>
     </None>
   </ItemGroup>
 </Project>
