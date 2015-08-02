@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\bell">
+      <UniqueIdentifier>{413f6fd6-b36a-497a-926f-ea9212e786fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\bell\util">
+      <UniqueIdentifier>{377fc6f7-a606-431b-bbbf-fe3eb26060cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\bell\assertion">
+      <UniqueIdentifier>{b1408c67-664d-444e-8256-e0629b3fc216}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\bell\preprecessor">
+      <UniqueIdentifier>{bc4bb83e-ab5c-4a1b-b539-cd813a2b77cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\bell\hash">
+      <UniqueIdentifier>{8ef67d6e-f1ba-4b95-b050-b60ca13696c5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bell\util\Test_ArrayRef.cpp">
+      <Filter>ソース ファイル\bell\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bell\assertion\Test_Assert.cpp">
+      <Filter>ソース ファイル\bell\assertion</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\bell\util\ArrayRef.hpp">
+      <Filter>ソース ファイル\bell\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bell\Assert.hpp">
+      <Filter>ソース ファイル\bell</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bell\assertion\Assert.hpp">
+      <Filter>ソース ファイル\bell\assertion</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bell\preprocessor\Stringize.hpp">
+      <Filter>ソース ファイル\bell\preprecessor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bell\hash\Crc32.hpp">
+      <Filter>ソース ファイル\bell\hash</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
