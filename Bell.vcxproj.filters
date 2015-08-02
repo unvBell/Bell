@@ -27,6 +27,12 @@
     <Filter Include="ソース ファイル\bell\format">
       <UniqueIdentifier>{ef2cec2d-48e5-48f9-823b-87e93d85a094}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\bell\timer">
+      <UniqueIdentifier>{c9c620f3-3791-4ed6-ab21-69075db8fbd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\bell\exception">
+      <UniqueIdentifier>{7c43fee0-d776-4e16-bd6f-231699fe6f9c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Main.cpp">
@@ -46,6 +52,15 @@
     </ClCompile>
     <ClCompile Include="src\bell\format\Test_Format.cpp">
       <Filter>ソース ファイル\bell\format</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bell\timer\HiPerformanceTimer.cpp">
+      <Filter>ソース ファイル\bell\timer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bell\timer\Test_Timer.cpp">
+      <Filter>ソース ファイル\bell\timer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bell\exception\Test_TraceRecorder.cpp">
+      <Filter>ソース ファイル\bell\exception</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -73,10 +88,34 @@
     <ClInclude Include="src\bell\Format.hpp">
       <Filter>ソース ファイル\bell</Filter>
     </ClInclude>
+    <ClInclude Include="src\bell\timer\Timer.hpp">
+      <Filter>ソース ファイル\bell\timer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bell\timer\HiPerformanceTimer.hpp">
+      <Filter>ソース ファイル\bell\timer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bell\exception\TraceRecorder.hpp">
+      <Filter>ソース ファイル\bell\exception</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bell\exception\Exception.hpp">
+      <Filter>ソース ファイル\bell\exception</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bell\Timer.hpp">
+      <Filter>ソース ファイル\bell</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bell\Exception.hpp">
+      <Filter>ソース ファイル\bell</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="src\bell\format\Format.inl">
       <Filter>ソース ファイル\bell\format</Filter>
+    </None>
+    <None Include="src\bell\timer\Timer.inl">
+      <Filter>ソース ファイル\bell\timer</Filter>
+    </None>
+    <None Include="src\bell\exception\Exception.inl">
+      <Filter>ソース ファイル\bell\exception</Filter>
     </None>
   </ItemGroup>
 </Project>

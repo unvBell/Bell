@@ -24,7 +24,7 @@ namespace bell { namespace assertion {
 	/**
 	 * アサーション情報
 	 */
-	struct AssertionInfo {
+	struct AssertionInfo final {
 		const char*	expr;
 		const char*	msg;
 		const char*	file;
