@@ -1,4 +1,4 @@
-#ifdef _DEBUG
+﻿#ifdef _DEBUG
 
 #include <gtest/gtest.h>
 #include "ArrayRef.hpp"

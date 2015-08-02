@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #ifndef BELL_ENABLE_ASSERTION_HANDLER
 # include <iostream>
@@ -7,12 +7,12 @@
 
 
 /**
- * ƒAƒT[ƒVƒ‡ƒ“•¶š—ñ‚ÌƒtƒH[ƒ}ƒbƒeƒBƒ“ƒO
- * @param expr ®•¶š—ñ
- * @param msg  ƒGƒ‰[ƒƒbƒZ[ƒW
- * @param file ƒtƒ@ƒCƒ‹–¼
- * @param line s”
- * @param func ŠÖ”–¼
+ * ã‚¢ã‚µãƒ¼ã‚·ãƒ§ãƒ³æ–‡å­—åˆ—ã®ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒ†ã‚£ãƒ³ã‚°
+ * @param expr å¼æ–‡å­—åˆ—
+ * @param msg  ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
+ * @param file ãƒ•ã‚¡ã‚¤ãƒ«å
+ * @param line è¡Œæ•°
+ * @param func é–¢æ•°å
  */
 #define BELL_ASSERTION_FORMAT(expr, msg, file, line, func)	\
 	"Assertion Failed! " msg "\n"							\
@@ -22,7 +22,7 @@
 
 namespace bell { namespace assertion {
 	/**
-	 * ƒAƒT[ƒVƒ‡ƒ“î•ñ
+	 * ã‚¢ã‚µãƒ¼ã‚·ãƒ§ãƒ³æƒ…å ±
 	 */
 	struct AssertionInfo {
 		const char*	expr;
@@ -34,13 +34,13 @@ namespace bell { namespace assertion {
 
 
 	/**
-	 * ƒAƒT[ƒVƒ‡ƒ“‚Ì¸”s
-	 * @param info ƒAƒT[ƒVƒ‡ƒ“î•ñ
+	 * ã‚¢ã‚µãƒ¼ã‚·ãƒ§ãƒ³ã®å¤±æ•—
+	 * @param info ã‚¢ã‚µãƒ¼ã‚·ãƒ§ãƒ³æƒ…å ±
 	 */
 	void assertionFailed(AssertionInfo info);
 
 #ifndef BELL_ENABLE_ASSERTION_HANDLER
-	//	ƒfƒtƒHƒ‹ƒgƒAƒT[ƒgƒnƒ“ƒhƒ‰
+	//	ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã‚¢ã‚µãƒ¼ãƒˆãƒãƒ³ãƒ‰ãƒ©
 	inline void assertionFailed(AssertionInfo info) {
 		std::cerr << info.msg << std::endl;
 		std::abort();
@@ -51,13 +51,13 @@ namespace bell { namespace assertion {
 
 namespace bell { namespace detail {
 	/**
-	 * ğŒ‚Ìƒ`ƒFƒbƒN
-	 * @param cond ğŒ
-	 * @param msg  ƒGƒ‰[ƒƒbƒZ[ƒW
-	 * @param expr ®•¶š—ñ
-	 * @param file ƒtƒ@ƒCƒ‹–¼
-	 * @param line s”
-	 * @param func ŠÖ”–¼
+	 * æ¡ä»¶ã®ãƒã‚§ãƒƒã‚¯
+	 * @param cond æ¡ä»¶
+	 * @param msg  ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
+	 * @param expr å¼æ–‡å­—åˆ—
+	 * @param file ãƒ•ã‚¡ã‚¤ãƒ«å
+	 * @param line è¡Œæ•°
+	 * @param func é–¢æ•°å
 	 */
 	constexpr inline bool assertionCheck(bool cond, const char* msg, const char* expr, const char* file, long line, const char* func) {
 		return cond ? true : (assertion::assertionFailed({ expr, msg, file, line, func }), false);

@@ -1,7 +1,7 @@
-#pragma once
+ï»¿#pragma once
 
 /**
- * ®‚Ì•¶š—ñ‰»
- * @param s •¶š—ñ‰»‘ÎÛ
+ * å¼ã®æ–‡å­—åˆ—åŒ–
+ * @param s æ–‡å­—åˆ—åŒ–å¯¾è±¡
  */
 #define BELL_PP_STRINGIZE(s) #s

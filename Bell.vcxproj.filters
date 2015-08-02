@@ -35,6 +35,12 @@
     <ClCompile Include="src\bell\assertion\Test_Assert.cpp">
       <Filter>ソース ファイル\bell\assertion</Filter>
     </ClCompile>
+    <ClCompile Include="src\bell\hash\Crc32.cpp">
+      <Filter>ソース ファイル\bell\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bell\hash\Test_Crc32.cpp">
+      <Filter>ソース ファイル\bell\hash</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\bell\util\ArrayRef.hpp">
@@ -51,6 +57,9 @@
     </ClInclude>
     <ClInclude Include="src\bell\hash\Crc32.hpp">
       <Filter>ソース ファイル\bell\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bell\Alias.hpp">
+      <Filter>ソース ファイル\bell</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

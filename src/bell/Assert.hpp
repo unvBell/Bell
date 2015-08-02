@@ -1,12 +1,12 @@
-#pragma once
+ï»¿#pragma once
 
 #ifdef _DEBUG
 
 # include <boost/current_function.hpp>
 
 /**
- * ƒAƒT[ƒVƒ‡ƒ“ƒ}ƒNƒ
- * @param expr expr‚ªfalse‚È‚ç‚ÎƒAƒT[ƒVƒ‡ƒ“
+ * ã‚¢ã‚µãƒ¼ã‚·ãƒ§ãƒ³ãƒã‚¯ãƒ­
+ * @param expr exprãŒfalseãªã‚‰ã°ã‚¢ã‚µãƒ¼ã‚·ãƒ§ãƒ³
  */
 # define BELL_ASSERT(expr)																\
 	((void)::bell::detail::assertionCheck(												\
@@ -17,9 +17,9 @@
 
 
 /**
- * ƒƒbƒZ[ƒW‚ ‚èƒAƒT[ƒVƒ‡ƒ“ƒ}ƒNƒ
- * @param expr expr‚ªfalse‚È‚ç‚ÎƒAƒT[ƒVƒ‡ƒ“
- * @param msg  ƒGƒ‰[ƒƒbƒZ[ƒW
+ * ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚ã‚Šã‚¢ã‚µãƒ¼ã‚·ãƒ§ãƒ³ãƒã‚¯ãƒ­
+ * @param expr exprãŒfalseãªã‚‰ã°ã‚¢ã‚µãƒ¼ã‚·ãƒ§ãƒ³
+ * @param msg  ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
  */
 # define BELL_ASSERT_MSG(expr, msg)														\
 	((void)::bell::detail::assertionCheck(												\
