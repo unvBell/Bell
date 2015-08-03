@@ -2,6 +2,7 @@
 
 #include <ostream>
 #include <cmath>
+#include "../Assert.hpp"
 
 namespace bell { namespace math {
 	/**
@@ -61,7 +62,7 @@ namespace bell { namespace math {
 		
 		template <typename U>
 		constexpr Vector2<decltype(T{}/U{})> operator/(U a) const noexcept {
-			return { x/a, y/a };
+			return BELL_ASSERT(a != 0), Vector2{ x/a, y/a };
 		}
 
 		Vector2& operator+=(const Vector2& v) noexcept {
