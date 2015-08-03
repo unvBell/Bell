@@ -20,12 +20,14 @@ TEST(Bell_Assertion, Runtime) {
 }
 
 
-constexpr static bool f(int x) {
-	return BELL_ASSERT(x > 0), true;
-}
+namespace {
+	constexpr bool f(int x) {
+		return BELL_ASSERT(x > 0), true;
+	}
 
-constexpr static bool g(int x) {
-	return BELL_ASSERT_MSG(x > 0, "g"), true;
+	constexpr bool g(int x) {
+		return BELL_ASSERT_MSG(x > 0, "g"), true;
+	}
 }
 
 TEST(Bell_Assertion, CompileTime) {

@@ -3,7 +3,7 @@
 #include <gtest/gtest.h>
 
 #ifdef _DEBUG
-#  pragma comment(lib, "gtest/gtest_d.lib")
+# pragma comment(lib, "gtest/gtest_d.lib")
 #endif
 
 //	エントリーポイント

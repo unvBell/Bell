@@ -33,6 +33,9 @@
     <Filter Include="ソース ファイル\bell\exception">
       <UniqueIdentifier>{7c43fee0-d776-4e16-bd6f-231699fe6f9c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\bell\deflate">
+      <UniqueIdentifier>{3a3068a4-5072-4774-bcd1-0c0735c79ee1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Main.cpp">
@@ -64,6 +67,9 @@
     </ClCompile>
     <ClCompile Include="src\bell\exception\Test_Exception.cpp">
       <Filter>ソース ファイル\bell\exception</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bell\deflate\Deflate.cpp">
+      <Filter>ソース ファイル\bell\deflate</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -108,6 +114,12 @@
     </ClInclude>
     <ClInclude Include="src\bell\exception\ErrorInfoRecorder.hpp">
       <Filter>ソース ファイル\bell\exception</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bell\deflate\Deflate.hpp">
+      <Filter>ソース ファイル\bell\deflate</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bell\deflate\DeflateError.hpp">
+      <Filter>ソース ファイル\bell\deflate</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
