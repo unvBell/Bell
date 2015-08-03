@@ -158,6 +158,7 @@ TYPED_TEST(Bell_Math_Vector2, Op) {
 	EXPECT_EQ(V(T{ 6},T{ 15}), a*3);
 	EXPECT_EQ(V(T{10},T{ 25}), 5*a);
 	EXPECT_EQ(V(T{ 2},T{  4}), b/5);
+	EXPECT_EXIT(a/0, testing::ExitedWithCode{3}, ".*");
 
 	//	op binary assign
 	V e = { T{ 2}, T{ 5} };
