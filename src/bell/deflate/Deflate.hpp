@@ -4,7 +4,7 @@
 #include "../util/ArrayRef.hpp"
 
 namespace bell { namespace deflate {
-	constexpr int defaultCompressionLevel = 5;
+	constexpr int defaultCompressionLevel = 6;
 
 	/**
 	 * 圧縮

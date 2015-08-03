@@ -153,6 +153,7 @@
   <ItemGroup>
     <ClCompile Include="src\bell\assertion\Test_Assert.cpp" />
     <ClCompile Include="src\bell\deflate\Deflate.cpp" />
+    <ClCompile Include="src\bell\deflate\Test_Deflate.cpp" />
     <ClCompile Include="src\bell\exception\Test_ErrorInfoRecorder.cpp" />
     <ClCompile Include="src\bell\exception\Test_Exception.cpp" />
     <ClCompile Include="src\bell\format\Test_Format.cpp" />

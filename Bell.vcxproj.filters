@@ -71,6 +71,9 @@
     <ClCompile Include="src\bell\deflate\Deflate.cpp">
       <Filter>ソース ファイル\bell\deflate</Filter>
     </ClCompile>
+    <ClCompile Include="src\bell\deflate\Test_Deflate.cpp">
+      <Filter>ソース ファイル\bell\deflate</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\bell\util\ArrayRef.hpp">
