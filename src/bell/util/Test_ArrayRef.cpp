@@ -43,7 +43,7 @@ TEST(Bell_Util_ArrayRef, ConstMethod) {
 	EXPECT_EQ(0, a[0]);
 	EXPECT_EQ(1, a[1]);
 	EXPECT_EQ(2, a[2]);
-	EXPECT_EXIT(a[5], testing::ExitedWithCode{3}, ".*");
+	EXPECT_DEATH(a[5], ".*");
 
 	//	iter
 	EXPECT_EQ(a.data()         , a. begin());

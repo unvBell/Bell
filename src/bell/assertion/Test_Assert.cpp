@@ -12,11 +12,11 @@ TEST(Bell_Assertion, Runtime) {
 	BELL_ASSERT_MSG(true  , "msg");
 	BELL_ASSERT_MSG(x == 0, "msg");
 	
-	EXPECT_EXIT(BELL_ASSERT(false ), testing::ExitedWithCode{3}, "Assertion Failed!.+");
-	EXPECT_EXIT(BELL_ASSERT(x != 0), testing::ExitedWithCode{3}, "Assertion Failed!.+");
+	EXPECT_DEATH(BELL_ASSERT(false ), "Assertion Failed!.+");
+	EXPECT_DEATH(BELL_ASSERT(x != 0), "Assertion Failed!.+");
 	
-	EXPECT_EXIT(BELL_ASSERT_MSG(false , "msg"), testing::ExitedWithCode{3}, "Assertion Failed!.+");
-	EXPECT_EXIT(BELL_ASSERT_MSG(x != 0, "msg"), testing::ExitedWithCode{3}, "Assertion Failed!.+");
+	EXPECT_DEATH(BELL_ASSERT_MSG(false , "msg"), "Assertion Failed!.+");
+	EXPECT_DEATH(BELL_ASSERT_MSG(x != 0, "msg"), "Assertion Failed!.+");
 }
 
 

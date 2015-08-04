@@ -35,6 +35,11 @@ TYPED_TEST(Bell_Math_Vector2, CtorCompileTime) {
 }
 
 //TEST(Bell_Math_Vector2, OpType) {
+	static_assert(is_same<Vec2i, Vector2<int>   >::value, "");
+	static_assert(is_same<Vec2f, Vector2<float> >::value, "");
+	static_assert(is_same<Vec2d, Vector2<double>>::value, "");
+	static_assert(is_same<Vec2 , Vector2<float> >::value, "");
+
 	static_assert(is_same<decltype(Vec2i{} + Vec2i{}), Vec2i>::value, "");
 	static_assert(is_same<decltype(Vec2i{} + Vec2f{}), Vec2f>::value, "");
 	static_assert(is_same<decltype(Vec2i{} + Vec2d{}), Vec2d>::value, "");
@@ -132,10 +137,10 @@ TYPED_TEST(Bell_Math_Vector2, Op) {
 	using T = TypeParam;
 	using V = Vector2<T>;
 
-	V a = { T{ 2}, T{ 5} };
-	V b = { T{10}, T{20} };
-	V c = { T{10}, T{20} };
-	V d;
+	constexpr V a = { T{ 2}, T{ 5} };
+	constexpr V b = { T{10}, T{20} };
+	constexpr V c = { T{10}, T{20} };
+	constexpr V d;
 
 	//	op Vector2<U>
 	Vec2i vi = a;
@@ -143,22 +148,23 @@ TYPED_TEST(Bell_Math_Vector2, Op) {
 	Vec2d vd = a;
 
 	//	op bool
-	EXPECT_TRUE (!!a);
-	EXPECT_TRUE (!!b);
-	EXPECT_TRUE (!!c);
-	EXPECT_FALSE(!!d);
+	static_assert( a, "");
+	static_assert( b, "");
+	static_assert( c, "");
+	static_assert(!d, "");
 
 	//	op unary
-	EXPECT_EQ(V(T{ 2},T{  5}),  +a);
-	EXPECT_EQ(V(T{-2},T{ -5}),  -a);
+	static_assert(+a == V(T{ 2},T{  5}), "");
+	static_assert(-a == V(T{-2},T{ -5}), "");
 
 	//	op binary
-	EXPECT_EQ(V(T{12},T{ 25}), a+b);
-	EXPECT_EQ(V(T{-8},T{-15}), a-b);
-	EXPECT_EQ(V(T{ 6},T{ 15}), a*3);
-	EXPECT_EQ(V(T{10},T{ 25}), 5*a);
-	EXPECT_EQ(V(T{ 2},T{  4}), b/5);
-	EXPECT_EXIT(a/0, testing::ExitedWithCode{3}, ".*");
+	static_assert(a+b == V(T{12},T{ 25}), "");
+	static_assert(a-b == V(T{-8},T{-15}), "");
+	static_assert(a*3 == V(T{ 6},T{ 15}), "");
+	static_assert(5*a == V(T{10},T{ 25}), "");
+	static_assert(b/5 == V(T{ 2},T{  4}), "");
+	//static_assert(a/0, "");
+	EXPECT_DEATH(a/0, ".*");
 
 	//	op binary assign
 	V e = { T{ 2}, T{ 5} };
@@ -177,13 +183,13 @@ TYPED_TEST(Bell_Math_Vector2, Op) {
 	EXPECT_EQ(V(T{ 5},T{10}), h);
 
 	//	op equal
-	EXPECT_TRUE (a == a);
-	EXPECT_FALSE(a == b);
-	EXPECT_TRUE (b == c);
+	static_assert(  a == a , "");
+	static_assert(!(a == b), "");
+	static_assert(  b == c , "");
 
-	EXPECT_FALSE(a != a);
-	EXPECT_TRUE (a != b);
-	EXPECT_FALSE(b != c);
+	static_assert(!(a != a), "");
+	static_assert(  a != b , "");
+	static_assert(!(b != c), "");
 }
 
 TYPED_TEST(Bell_Math_Vector2, StaticMethodCompileTime) {
