@@ -160,6 +160,7 @@
     <ClCompile Include="src\bell\hash\Crc32.cpp" />
     <ClCompile Include="src\bell\hash\Test_Crc32.cpp" />
     <ClCompile Include="src\bell\math\Test_Constants.cpp" />
+    <ClCompile Include="src\bell\math\Test_Matrix3x2.cpp" />
     <ClCompile Include="src\bell\math\Test_Vector2.cpp" />
     <ClCompile Include="src\bell\timer\HiPerformanceTimer.cpp" />
     <ClCompile Include="src\bell\timer\Test_Timer.cpp" />
@@ -182,7 +183,9 @@
     <ClInclude Include="src\bell\format\Format.hpp" />
     <ClInclude Include="src\bell\hash\Crc32.hpp" />
     <ClInclude Include="src\bell\math\Constants.hpp" />
+    <ClInclude Include="src\bell\math\Matrix3x2.hpp" />
     <ClInclude Include="src\bell\math\Vector2.hpp" />
+    <ClInclude Include="src\bell\Matrix3x2.hpp" />
     <ClInclude Include="src\bell\preprocessor\Stringize.hpp" />
     <ClInclude Include="src\bell\Timer.hpp" />
     <ClInclude Include="src\bell\timer\HiPerformanceTimer.hpp" />
