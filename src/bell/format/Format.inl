@@ -1,9 +1,9 @@
-#pragma once
+ï»¿#pragma once
 
 #include <boost/format.hpp>
 
 namespace bell { namespace detail {
-	//	’l
+	//	å€¤
 	template <typename Ch, typename Type>
 	void formatValue(boost::basic_format<Ch>& f, Type&& val) {
 		f % val;
@@ -20,7 +20,7 @@ namespace bell { namespace detail {
 		f % (val ? val : null);
 	}
 
-	//	ŽÀ‘•
+	//	å®Ÿè£…
 	template <typename Ch, typename... Args>
 	void format_impl(boost::basic_format<Ch>& f, Args&&... args) {}
 

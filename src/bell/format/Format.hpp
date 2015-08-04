@@ -1,14 +1,14 @@
-#pragma once
+ï»¿#pragma once
 
 #include <boost/utility/string_ref.hpp>
 
 namespace bell {
 	/**
-	 * •¶Žš—ñ‚ÌƒtƒH[ƒ}ƒbƒeƒBƒ“ƒO
-	 * @param  fmt  ‘Ž®Žw’è•¶Žš—ñ
+	 * æ–‡å­—åˆ—ã®ãƒ•ã‚©ãƒ¼ãƒžãƒƒãƒ†ã‚£ãƒ³ã‚°
+	 * @param  fmt  æ›¸å¼æŒ‡å®šæ–‡å­—åˆ—
 	 * @param  args
-	 * @return      ƒtƒH[ƒ}ƒbƒeƒBƒ“ƒO‚³‚ê‚½•¶Žš—ñ
-	 * @throws boost::io::format_error ‘Ž®“™‚ÉƒGƒ‰[‚ª—L‚Á‚½ê‡
+	 * @return      ãƒ•ã‚©ãƒ¼ãƒžãƒƒãƒ†ã‚£ãƒ³ã‚°ã•ã‚ŒãŸæ–‡å­—åˆ—
+	 * @throws boost::io::format_error æ›¸å¼ç­‰ã«ã‚¨ãƒ©ãƒ¼ãŒæœ‰ã£ãŸå ´åˆ
 	 * @see    boost::format
 	 *
 	 * format("%1% %2$.4f", 42, 3.14)		=> "42 3.1400"
@@ -20,11 +20,11 @@ namespace bell {
 
 
 	/**
-	 * •¶Žš—ñ‚ÌƒtƒH[ƒ}ƒbƒeƒBƒ“ƒO
-	 * @param  fmt  ‘Ž®Žw’è•¶Žš—ñ
+	 * æ–‡å­—åˆ—ã®ãƒ•ã‚©ãƒ¼ãƒžãƒƒãƒ†ã‚£ãƒ³ã‚°
+	 * @param  fmt  æ›¸å¼æŒ‡å®šæ–‡å­—åˆ—
 	 * @param  args
-	 * @return      ƒtƒH[ƒ}ƒbƒeƒBƒ“ƒO‚³‚ê‚½•¶Žš—ñ
-	 * @throws boost::io::format_error ‘Ž®“™‚ÉƒGƒ‰[‚ª—L‚Á‚½ê‡
+	 * @return      ãƒ•ã‚©ãƒ¼ãƒžãƒƒãƒ†ã‚£ãƒ³ã‚°ã•ã‚ŒãŸæ–‡å­—åˆ—
+	 * @throws boost::io::format_error æ›¸å¼ç­‰ã«ã‚¨ãƒ©ãƒ¼ãŒæœ‰ã£ãŸå ´åˆ
 	 * @see    boost::wformat
 	 *
 	 * wformat(L"%1% %2$.4f", 42, 3.14)		=> L"42 3.1400"

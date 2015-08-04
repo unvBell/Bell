@@ -6,13 +6,13 @@ namespace bell { namespace timer {
 		: begin_(std::chrono::system_clock::now()) {}
 
 
-	//	Œv‘ªŠJŽn
+	//	計測開始
 	void Timer::restart() noexcept {
 		begin_ = std::chrono::system_clock::now();
 	}
 
 
-	//	Œo‰ßŽžŠÔ
+	//	経過時間
 	double Timer::elapsed() const noexcept {
 		using namespace std::chrono;
 
