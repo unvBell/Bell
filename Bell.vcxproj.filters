@@ -42,6 +42,9 @@
     <Filter Include="ソース ファイル\bell\logger">
       <UniqueIdentifier>{03b636fe-54ec-4bec-8157-48c4817f509d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\bell\encoding">
+      <UniqueIdentifier>{422f4ec8-1aa8-4db0-9017-15dac8cd9dea}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Main.cpp">
@@ -88,6 +91,12 @@
     </ClCompile>
     <ClCompile Include="src\bell\math\Test_Matrix3x2.cpp">
       <Filter>ソース ファイル\bell\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bell\encoding\Test_Encoding.cpp">
+      <Filter>ソース ファイル\bell\encoding</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bell\encoding\Encoding.cpp">
+      <Filter>ソース ファイル\bell\encoding</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -153,6 +162,9 @@
     </ClInclude>
     <ClInclude Include="src\bell\math\Matrix3x2.hpp">
       <Filter>ソース ファイル\bell\math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bell\encoding\Encoding.hpp">
+      <Filter>ソース ファイル\bell\encoding</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

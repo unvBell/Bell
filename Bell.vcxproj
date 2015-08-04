@@ -154,6 +154,8 @@
     <ClCompile Include="src\bell\assertion\Test_Assert.cpp" />
     <ClCompile Include="src\bell\deflate\Deflate.cpp" />
     <ClCompile Include="src\bell\deflate\Test_Deflate.cpp" />
+    <ClCompile Include="src\bell\encoding\Encoding.cpp" />
+    <ClCompile Include="src\bell\encoding\Test_Encoding.cpp" />
     <ClCompile Include="src\bell\exception\Test_ErrorInfoRecorder.cpp" />
     <ClCompile Include="src\bell\exception\Test_Exception.cpp" />
     <ClCompile Include="src\bell\format\Test_Format.cpp" />
@@ -176,6 +178,7 @@
     <ClInclude Include="src\bell\assertion\Assert.hpp" />
     <ClInclude Include="src\bell\deflate\Deflate.hpp" />
     <ClInclude Include="src\bell\deflate\DeflateError.hpp" />
+    <ClInclude Include="src\bell\encoding\Encoding.hpp" />
     <ClInclude Include="src\bell\Exception.hpp" />
     <ClInclude Include="src\bell\exception\Exception.hpp" />
     <ClInclude Include="src\bell\exception\ErrorInfoRecorder.hpp" />
