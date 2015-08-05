@@ -1,6 +1,7 @@
 ﻿#include <zlib/zlib.h>
 #include "Deflate.hpp"
 #include "DeflateError.hpp"
+#include "../util/Clamp.hpp"
 
 #ifdef _DEBUG
 # pragma comment(lib, "zlib/zlib_d.lib")
@@ -12,7 +13,7 @@ namespace bell { namespace deflate {
 	//	圧縮
 	std::vector<byte> compress(ArrayRef<byte> src, int level) {
 		//	レベルを[1, 9]にクリップ
-		level = std::min(std::max(level, 1), 9);
+		level = clamp(level, 1, 9);
 
 		//	データを格納するバッファの確保
 		std::vector<byte> data;
