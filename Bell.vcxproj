@@ -159,14 +159,17 @@
     <ClCompile Include="src\bell\exception\Test_ErrorInfoRecorder.cpp" />
     <ClCompile Include="src\bell\exception\Test_Exception.cpp" />
     <ClCompile Include="src\bell\format\Test_Format.cpp" />
+    <ClCompile Include="src\bell\graphics\Test_Color.cpp" />
     <ClCompile Include="src\bell\hash\Crc32.cpp" />
     <ClCompile Include="src\bell\hash\Test_Crc32.cpp" />
     <ClCompile Include="src\bell\math\Test_Constants.cpp" />
+    <ClCompile Include="src\bell\math\Test_Floor.cpp" />
     <ClCompile Include="src\bell\math\Test_Matrix3x2.cpp" />
     <ClCompile Include="src\bell\math\Test_Vector2.cpp" />
     <ClCompile Include="src\bell\timer\HiPerformanceTimer.cpp" />
     <ClCompile Include="src\bell\timer\Test_Timer.cpp" />
     <ClCompile Include="src\bell\util\Test_ArrayRef.cpp" />
+    <ClCompile Include="src\bell\util\Test_Clamp.cpp" />
     <ClCompile Include="src\Main.cpp">
       <RuntimeLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MultiThreadedDebug</RuntimeLibrary>
       <RuntimeLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MultiThreaded</RuntimeLibrary>
@@ -184,8 +187,10 @@
     <ClInclude Include="src\bell\exception\ErrorInfoRecorder.hpp" />
     <ClInclude Include="src\bell\Format.hpp" />
     <ClInclude Include="src\bell\format\Format.hpp" />
+    <ClInclude Include="src\bell\graphics\Color.hpp" />
     <ClInclude Include="src\bell\hash\Crc32.hpp" />
     <ClInclude Include="src\bell\math\Constants.hpp" />
+    <ClInclude Include="src\bell\math\Floor.hpp" />
     <ClInclude Include="src\bell\math\Matrix3x2.hpp" />
     <ClInclude Include="src\bell\math\Vector2.hpp" />
     <ClInclude Include="src\bell\Matrix3x2.hpp" />
@@ -194,10 +199,12 @@
     <ClInclude Include="src\bell\timer\HiPerformanceTimer.hpp" />
     <ClInclude Include="src\bell\timer\Timer.hpp" />
     <ClInclude Include="src\bell\util\ArrayRef.hpp" />
+    <ClInclude Include="src\bell\util\Clamp.hpp" />
     <ClInclude Include="src\bell\Vector2.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\bell\format\Format.inl" />
+    <None Include="src\bell\graphics\Color.inl" />
     <None Include="src\bell\timer\Timer.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

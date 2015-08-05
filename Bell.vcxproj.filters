@@ -45,6 +45,9 @@
     <Filter Include="ソース ファイル\bell\encoding">
       <UniqueIdentifier>{422f4ec8-1aa8-4db0-9017-15dac8cd9dea}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\bell\graphics">
+      <UniqueIdentifier>{abfd676e-f8a4-474a-9326-9fc620b2de92}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Main.cpp">
@@ -97,6 +100,15 @@
     </ClCompile>
     <ClCompile Include="src\bell\encoding\Encoding.cpp">
       <Filter>ソース ファイル\bell\encoding</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bell\graphics\Test_Color.cpp">
+      <Filter>ソース ファイル\bell\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bell\util\Test_Clamp.cpp">
+      <Filter>ソース ファイル\bell\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bell\math\Test_Floor.cpp">
+      <Filter>ソース ファイル\bell\math</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -166,6 +178,15 @@
     <ClInclude Include="src\bell\encoding\Encoding.hpp">
       <Filter>ソース ファイル\bell\encoding</Filter>
     </ClInclude>
+    <ClInclude Include="src\bell\graphics\Color.hpp">
+      <Filter>ソース ファイル\bell\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bell\util\Clamp.hpp">
+      <Filter>ソース ファイル\bell\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bell\math\Floor.hpp">
+      <Filter>ソース ファイル\bell\math</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="src\bell\format\Format.inl">
@@ -173,6 +194,9 @@
     </None>
     <None Include="src\bell\timer\Timer.inl">
       <Filter>ソース ファイル\bell\timer</Filter>
+    </None>
+    <None Include="src\bell\graphics\Color.inl">
+      <Filter>ソース ファイル\bell\graphics</Filter>
     </None>
   </ItemGroup>
 </Project>
