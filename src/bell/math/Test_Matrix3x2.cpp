@@ -6,9 +6,11 @@
 using namespace std;
 using namespace bell::math;
 
-template <typename Ch, typename Traits, typename T>
-std::basic_ostream<Ch, Traits>& operator<<(std::basic_ostream<Ch, Traits>& os, const boost::optional<Matrix3x2<T>>& m) {
-	return m ? (os << m.get()) : (os << Ch{'('} << Ch{'n'} << Ch{'o'} << Ch{'n'} << Ch{'e'} << Ch{')'});
+namespace {
+	template <typename Ch, typename Traits, typename T>
+	std::basic_ostream<Ch, Traits>& operator<<(std::basic_ostream<Ch, Traits>& os, const boost::optional<Matrix3x2<T>>& m) {
+		return m ? (os << m.get()) : (os << Ch{'('} << Ch{'n'} << Ch{'o'} << Ch{'n'} << Ch{'e'} << Ch{')'});
+	}
 }
 
 template <typename T>

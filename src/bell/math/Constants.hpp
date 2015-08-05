@@ -10,3 +10,7 @@ namespace bell { namespace math {
 		return static_cast<T>(3.1415926535897932384626433832795028841971693993L);
 	}
 }}
+
+namespace bell {
+	using math::pi;
+}
