@@ -16,7 +16,7 @@ namespace bell {
 	 * format("%1% %1%", true)				=> "true true"
 	 */
 	template <typename... Args>
-	std::string format(boost::string_ref _format, Args&&... args);
+	std::string format(boost::string_ref fmt, Args&&... args);
 
 
 	/**
@@ -32,7 +32,7 @@ namespace bell {
 	 * wformat(L"%1% %1%", true)			=> L"true true"
 	 */
 	template <typename... Args>
-	std::wstring wformat(boost::wstring_ref format, Args&&... args);
+	std::wstring wformat(boost::wstring_ref fmt, Args&&... args);
 }
 
 #include "Format.inl"
