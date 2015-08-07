@@ -31,14 +31,12 @@ namespace bell { namespace graphics {
 		float r = v * (1 - s*(1-f));
 
 		switch((i%6+6)%6) {
-		case 0: return { v, r, p, a };
-		case 1: return { q, v, p, a };
-		case 2: return { p, v, r, a };
-		case 3: return { p, q, v, a };
-		case 4: return { r, p, v, a };
-		case 5: return { v, p, q, a };
+		case 0 : return { v, r, p, a };
+		case 1 : return { q, v, p, a };
+		case 2 : return { p, v, r, a };
+		case 3 : return { p, q, v, a };
+		case 4 : return { r, p, v, a };
+		default: return { v, p, q, a };
 		}
-
-		return BELL_ASSERT(false), Color{};
 	}
 }}

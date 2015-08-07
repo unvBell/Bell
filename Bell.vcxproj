@@ -189,6 +189,7 @@
     <ClInclude Include="src\bell\format\Format.hpp" />
     <ClInclude Include="src\bell\graphics\Color.hpp" />
     <ClInclude Include="src\bell\hash\Crc32.hpp" />
+    <ClInclude Include="src\bell\logger\Logger.hpp" />
     <ClInclude Include="src\bell\math\Constants.hpp" />
     <ClInclude Include="src\bell\math\Floor.hpp" />
     <ClInclude Include="src\bell\math\Matrix3x2.hpp" />
