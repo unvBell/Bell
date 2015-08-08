@@ -22,7 +22,7 @@ namespace bell { namespace graphics {
 		BELL_ASSERT(0 <= v && v <= 1.f);
 		BELL_ASSERT(0 <= a && a <= 1.f);
 		
-		h /= 2*pi<float>() / 6;
+		h *= 6 / (2*pi<float>());
 
 		int   i = static_cast<int>(floor(h));
 		float f = h - i;
