@@ -162,6 +162,8 @@
     <ClCompile Include="src\bell\graphics\Test_Color.cpp" />
     <ClCompile Include="src\bell\hash\Crc32.cpp" />
     <ClCompile Include="src\bell\hash\Test_Crc32.cpp" />
+    <ClCompile Include="src\bell\logger\Logger.cpp" />
+    <ClCompile Include="src\bell\logger\Test_Logger.cpp" />
     <ClCompile Include="src\bell\math\Test_Constants.cpp" />
     <ClCompile Include="src\bell\math\Test_Floor.cpp" />
     <ClCompile Include="src\bell\math\Test_Matrix3x2.cpp" />
@@ -206,6 +208,7 @@
   <ItemGroup>
     <None Include="src\bell\format\Format.inl" />
     <None Include="src\bell\graphics\Color.inl" />
+    <None Include="src\bell\logger\Logger.inl" />
     <None Include="src\bell\timer\Timer.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

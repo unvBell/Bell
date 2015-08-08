@@ -110,6 +110,12 @@
     <ClCompile Include="src\bell\math\Test_Floor.cpp">
       <Filter>ソース ファイル\bell\math</Filter>
     </ClCompile>
+    <ClCompile Include="src\bell\logger\Logger.cpp">
+      <Filter>ソース ファイル\bell\logger</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bell\logger\Test_Logger.cpp">
+      <Filter>ソース ファイル\bell\logger</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\bell\util\ArrayRef.hpp">
@@ -200,6 +206,9 @@
     </None>
     <None Include="src\bell\graphics\Color.inl">
       <Filter>ソース ファイル\bell\graphics</Filter>
+    </None>
+    <None Include="src\bell\logger\Logger.inl">
+      <Filter>ソース ファイル\bell\logger</Filter>
     </None>
   </ItemGroup>
 </Project>
