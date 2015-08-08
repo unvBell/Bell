@@ -48,6 +48,9 @@
     <Filter Include="ソース ファイル\bell\graphics">
       <UniqueIdentifier>{abfd676e-f8a4-474a-9326-9fc620b2de92}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\bell\file">
+      <UniqueIdentifier>{d13fed62-890a-4cfa-ad63-00ccd19fb471}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Main.cpp">
@@ -115,6 +118,12 @@
     </ClCompile>
     <ClCompile Include="src\bell\logger\Test_Logger.cpp">
       <Filter>ソース ファイル\bell\logger</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bell\file\File.cpp">
+      <Filter>ソース ファイル\bell\file</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bell\file\Test_File.cpp">
+      <Filter>ソース ファイル\bell\file</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -195,6 +204,15 @@
     </ClInclude>
     <ClInclude Include="src\bell\logger\Logger.hpp">
       <Filter>ソース ファイル\bell\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bell\file\File.hpp">
+      <Filter>ソース ファイル\bell\file</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bell\file\FileException.hpp">
+      <Filter>ソース ファイル\bell\file</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bell\Logger.hpp">
+      <Filter>ソース ファイル\bell</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

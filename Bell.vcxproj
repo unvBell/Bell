@@ -158,6 +158,8 @@
     <ClCompile Include="src\bell\encoding\Test_Encoding.cpp" />
     <ClCompile Include="src\bell\exception\Test_ErrorInfoRecorder.cpp" />
     <ClCompile Include="src\bell\exception\Test_Exception.cpp" />
+    <ClCompile Include="src\bell\file\File.cpp" />
+    <ClCompile Include="src\bell\file\Test_File.cpp" />
     <ClCompile Include="src\bell\format\Test_Format.cpp" />
     <ClCompile Include="src\bell\graphics\Test_Color.cpp" />
     <ClCompile Include="src\bell\hash\Crc32.cpp" />
@@ -187,10 +189,13 @@
     <ClInclude Include="src\bell\Exception.hpp" />
     <ClInclude Include="src\bell\exception\Exception.hpp" />
     <ClInclude Include="src\bell\exception\ErrorInfoRecorder.hpp" />
+    <ClInclude Include="src\bell\file\File.hpp" />
+    <ClInclude Include="src\bell\file\FileException.hpp" />
     <ClInclude Include="src\bell\Format.hpp" />
     <ClInclude Include="src\bell\format\Format.hpp" />
     <ClInclude Include="src\bell\graphics\Color.hpp" />
     <ClInclude Include="src\bell\hash\Crc32.hpp" />
+    <ClInclude Include="src\bell\Logger.hpp" />
     <ClInclude Include="src\bell\logger\Logger.hpp" />
     <ClInclude Include="src\bell\math\Constants.hpp" />
     <ClInclude Include="src\bell\math\Floor.hpp" />
